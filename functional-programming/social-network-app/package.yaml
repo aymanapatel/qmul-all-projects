@@ -1,0 +1,47 @@
+name:                haskell-project
+version:             0.1.0.0
+github:              "aymanapatel/qmul-socialnetwork-project"
+license:             MIT
+author:              "Ayman Patel"
+maintainer:          "ayman.patel97@gmail.com"
+copyright:           "2026 QMUL Student"
+
+extra-source-files:
+  - README.md
+
+description:         A concurrent social network simulation in Haskell
+
+dependencies:
+  - base >= 4.7 && < 5
+  - stm
+  - random
+  - time
+  - containers
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+  - -threaded
+  - -rtsopts
+  - -with-rtsopts=-N
+
+library:
+  source-dirs: src/lib
+
+executables:
+  haskell-project:
+    main:                Main.hs
+    source-dirs:         src/app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - haskell-project

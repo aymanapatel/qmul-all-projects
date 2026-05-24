@@ -1,0 +1,45 @@
+# Stack build artifacts
+.stack-work/
+*.cabal
+stack.yaml.lock
+
+# Haskell
+dist/
+dist-*/
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test coverage
+.hpc/
+tix/
+
+# GHCi
+.ghci
+
+# Documentation
+.haddock/
+haddock/
+
+*md
+*adoc
